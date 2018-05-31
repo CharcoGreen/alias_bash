@@ -1,6 +1,8 @@
 # Alias Debian
 
+# Upgrade system
 alias upup='apt-get update && apt-get upgrade'
+alias onlyup='apt-get update'
 
 # For user su
 # Alias for CentOS
