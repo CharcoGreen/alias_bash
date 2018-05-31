@@ -2,9 +2,7 @@
 
 alias upup='apt-get update && apt-get upgrade'
 
-
-
-
+# For user su
 # Alias for CentOS
 # Actualizar sistema
 alias upup='yum update && yum upgrade'
