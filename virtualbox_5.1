@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Instalar Virtualbox 5.1.X Para máquinas con sistema operativo centOS
+
+# Preinstalacion
+
+wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo -P /etc/yum.repos.d/
+yum install epel-release -y
+yum update -y  # && reboot
+
+# Instalacion
+
+yum install gcc make patch  dkms qt libgomp kernel-headers kernel-devel fontforge binutils glibc-headers gli$
+
+yum install VirtualBox-5.1 -y
+
+/usr/lib/virtualbox/vboxdrv.sh setup
+usermod -a -G vboxusers $USER
